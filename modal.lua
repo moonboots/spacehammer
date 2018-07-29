@@ -42,7 +42,7 @@ modal.states = {
       if self.hotkeyModal then
         self.hotkeyModal:enter()
       else
-        self.hotkeyModal = hs.hotkey.modal.new({"cmd"}, "space")
+        self.hotkeyModal = hs.hotkey.modal.new({"ctrl"}, "space")
       end
       self.hotkeyModal:bind("","space", nil, function() fsm:toIdle(); windows.activateApp("Alfred 3") end)
       self.hotkeyModal:bind("","w", nil, function() fsm:toWindows() end)
